@@ -23,3 +23,9 @@ nano ~/.claude/settings.json
   }
 }
 ```
+
+## Run without environment variables in .bashrc
+
+```bash
+ollama launch claude
+```
