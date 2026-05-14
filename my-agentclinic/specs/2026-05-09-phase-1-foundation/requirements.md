@@ -70,7 +70,7 @@ The project is being built for:
 - Multi-tenancy or multi-clinic support
 - Production deployment configuration
 - Advanced error handling and logging
-- Testing infrastructure (unit tests, E2E tests)
+- Vitest testing infrastructure (deferred to Phase 2+)
 
 **Constraints**:
 - Must use TypeScript strict mode

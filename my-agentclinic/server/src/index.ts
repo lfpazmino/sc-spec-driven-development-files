@@ -1,7 +1,7 @@
 import express from "express";
 import cors from "cors";
 
-const app = express();
+export const app = express();
 const PORT = process.env.PORT ?? 3000;
 
 app.use(cors());
@@ -11,6 +11,8 @@ app.get("/health", (_req, res) => {
   res.json({ status: "oki!", timestamp: new Date().toISOString() });
 });
 
-app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
-});
+if (process.env.NODE_ENV !== "test") {
+  app.listen(PORT, () => {
+    console.log(`Server running on http://localhost:${PORT}`);
+  });
+}

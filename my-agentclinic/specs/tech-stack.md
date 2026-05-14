@@ -21,7 +21,7 @@
 - **Package Manager**: pnpm
 - **Linting**: ESLint with TypeScript rules
 - **Formatting**: Prettier
-- **Testing**: Vitest for unit tests, Playwright for E2E
+- **Testing**: Vitest for unit tests and validation, Playwright for E2E
 - **Type Checking**: tsc (TypeScript compiler)
 
 ## Why This Stack

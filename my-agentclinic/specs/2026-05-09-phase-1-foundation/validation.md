@@ -82,6 +82,16 @@ To verify Phase 1 is complete:
 
 ---
 
+## Automated Testing (Future Phases)
+
+Vitest is the designated test runner for unit tests and validation. Once test suites are implemented, run:
+
+```bash
+pnpm test
+```
+
+This delegates to each workspace package's `test` script via `pnpm -r test`.
+
 ## Success Indicators
 
 - ✅ New developer can clone repo and run `pnpm install` followed by dev servers
