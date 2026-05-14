@@ -10,11 +10,11 @@ Each phase is designed to be completed in a day or less, with 1-3 features per p
 
 **Goal**: Project scaffolding and core data models
 
-- [ ] Initialize project with Vite + React + TypeScript
-- [ ] Set up Express server with TypeScript
-- [ ] Configure Prisma with SQLite
-- [ ] Define core schema: Agent, Ailment, Therapy, Booking
-- [ ] Seed initial mock data
+- [x] Initialize project with Vite + React + TypeScript
+- [x] Set up Express server with TypeScript
+- [x] Configure Prisma with SQLite
+- [x] Define core schema: Agent, Ailment, Therapy, Booking
+- [x] Seed initial mock data
 
 **Deliverable**: Running dev server with database schema and seed data
 
