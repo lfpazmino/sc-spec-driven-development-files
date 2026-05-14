@@ -1,0 +1,43 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Agent {
+  id           Int       @id @default(autoincrement())
+  name         String
+  specialty    String
+  description  String
+  availability Boolean   @default(true)
+  bookings     Booking[]
+}
+
+model Ailment {
+  id          Int    @id @default(autoincrement())
+  name        String
+  description String
+  severity    String @default("medium")
+}
+
+model Therapy {
+  id          Int       @id @default(autoincrement())
+  name        String
+  description String
+  duration    Int
+  cost        Float
+  bookings    Booking[]
+}
+
+model Booking {
+  id          Int      @id @default(autoincrement())
+  agentId     Int
+  therapyId   Int
+  scheduledAt DateTime
+  status      String   @default("pending")
+  agent       Agent    @relation(fields: [agentId], references: [id])
+  therapy     Therapy  @relation(fields: [therapyId], references: [id])
+}

@@ -68,9 +68,23 @@ This plan breaks down Phase 1 Foundation into 5 sequential task groups, each cor
 
 ---
 
+## Task Group 6: Implement Main Layout Component
+
+1. Create CSS file for layout styling (src/styles/layout.css)
+2. Create Header component (src/components/layout/Header.tsx)
+3. Create Main component (src/components/layout/Main.tsx)
+4. Create Footer component (src/components/layout/Footer.tsx)
+5. Create MainLayout component (src/components/layout/MainLayout.tsx) that composes Header, Main, and Footer
+6. Import and link CSS file in MainLayout component
+7. Update App.tsx to use MainLayout
+8. Verify layout renders correctly with all three sections
+
+---
+
 ## Dependencies
 
 - Task Group 1 must complete before Task Group 2 (project structure needed)
 - Task Group 2 must complete before Task Group 3 (server setup needed for Prisma integration)
 - Task Group 3 must complete before Task Group 4 (Prisma must be configured)
 - Task Group 4 must complete before Task Group 5 (schema must exist before seeding)
+- Task Group 1 must complete before Task Group 6 (frontend structure needed)

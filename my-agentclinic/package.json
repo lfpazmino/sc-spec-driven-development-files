@@ -1,14 +1,23 @@
 {
   "name": "agentclinic",
   "version": "1.0.0",
-  "description": "",
-  "main": "dist/index.js",
+  "private": true,
+  "description": "Healthcare platform for AI agents",
   "scripts": {
-    "build": "tsc"
+    "dev": "pnpm --parallel -r dev",
+    "build": "pnpm -r build",
+    "type-check": "pnpm -r type-check",
+    "prisma": "prisma"
   },
-  "dependencies": {},
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+  },
   "devDependencies": {
+    "prisma": "^5.22.0",
+    "tsx": "^4.19.2",
     "typescript": "^5.5.3"
   },
-  "private": true
+  "dependencies": {
+    "@prisma/client": "5.22.0"
+  }
 }
