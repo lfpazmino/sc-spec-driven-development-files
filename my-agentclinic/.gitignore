@@ -20,3 +20,6 @@ dist
 package-lock.json
 pnpm-lock.yaml
 yarn.lock
+
+.ipynb_checkpoints
+specs/.ipynb_checkpoints
