@@ -20,59 +20,27 @@ Each phase is designed to be completed in a day or less, with 1-3 features per p
 
 ---
 
-## Phase 2: Dashboard Shell (Day 1)
+## Phase 2: Browse & Discover (Day 1)
 
-**Goal**: Basic layout and navigation
+**Goal**: Dashboard shell, agent listing, agent detail, and treatment catalog
 
-- [ ] Create main dashboard layout with sidebar
-- [ ] Implement navigation between sections
+- [ ] Create main dashboard layout with sidebar and navigation
 - [ ] Set up shadcn/ui component library
 - [ ] Create home page with clinic overview
-
-**Deliverable**: Navigable dashboard shell with home page
-
----
-
-## Phase 3: Agent Listing (Day 1)
-
-**Goal**: Display and browse agents
-
-- [ ] Build Agent card component
-- [ ] Create Agent list page
-- [ ] Implement API endpoint: GET /agents
-- [ ] Add search/filter functionality
-
-**Deliverable**: Browseable list of agents with search
-
----
-
-## Phase 4: Agent Detail (Day 1)
-
-**Goal**: View individual agent profiles
-
-- [ ] Create Agent detail page
-- [ ] Display agent info, ailments, and therapy history
+- [ ] Build Agent card component and list page
+- [ ] Implement API endpoint: GET /agents with search/filter
+- [ ] Create Agent detail page with info, ailments, and therapy history
 - [ ] Implement API endpoint: GET /agents/:id
 - [ ] Add "Book Appointment" button
-
-**Deliverable**: Detailed agent profile view
-
----
-
-## Phase 5: Ailments & Therapies (Day 1)
-
-**Goal**: Display available treatments
-
-- [ ] Create Ailments listing page
-- [ ] Create Therapies listing page
+- [ ] Create Ailments and Therapies listing pages
 - [ ] Implement API endpoints: GET /ailments, GET /therapies
 - [ ] Link therapies to ailments they treat
 
-**Deliverable**: Browseable ailments and therapies
+**Deliverable**: Navigable dashboard with full browse and discover experience
 
 ---
 
-## Phase 6: Booking Form (Day 1)
+## Phase 3: Booking Form (Day 1)
 
 **Goal**: Create appointment booking UI
 
@@ -85,7 +53,7 @@ Each phase is designed to be completed in a day or less, with 1-3 features per p
 
 ---
 
-## Phase 7: Booking API (Day 1)
+## Phase 4: Booking API (Day 1)
 
 **Goal**: Persist bookings to database
 
@@ -98,7 +66,7 @@ Each phase is designed to be completed in a day or less, with 1-3 features per p
 
 ---
 
-## Phase 8: My Bookings (Day 1)
+## Phase 5: My Bookings (Day 1)
 
 **Goal**: View and manage bookings
 
@@ -111,7 +79,7 @@ Each phase is designed to be completed in a day or less, with 1-3 features per p
 
 ---
 
-## Phase 9: Staff Dashboard (Day 1)
+## Phase 6: Staff Dashboard (Day 1)
 
 **Goal**: Staff view for clinic operations
 
@@ -124,7 +92,7 @@ Each phase is designed to be completed in a day or less, with 1-3 features per p
 
 ---
 
-## Phase 10: Polish & Testing (Day 1)
+## Phase 7: Polish & Testing (Day 1)
 
 **Goal**: Refine and validate
 
